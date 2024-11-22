@@ -4,13 +4,6 @@
 #include "jogada.h"
 #include <stdio.h>
 
-// typedef struct{
-//     tTabuleiro tabuleiro;
-//     tJogador jogador1;
-//     tJogador jogador2;
-    
-// } tJogo;
-
 tJogo CriaJogo(){
     tJogo jogo;
     jogo.tabuleiro = CriaTabuleiro();
@@ -21,25 +14,39 @@ tJogo CriaJogo(){
 
 void ComecaJogo(tJogo jogo){
     tJogador teste = jogo.jogador1;
-   
-    while(1){
-        while(!AcabouJogo(jogo)){
-            jogo.tabuleiro = JogaJogador(teste, jogo.tabuleiro);
-            ImprimeTabuleiro(jogo.tabuleiro);
-            if(teste.id == ID_JOGADOR_1){
-                teste = jogo.jogador2;
-            } else {
-                teste = jogo.jogador1;
-            }
-        }
-        if(ContinuaJogo()){
-            jogo = CriaJogo();
-            continue;
-        } else {
+    int flag = 0;
+
+    
+    while(!AcabouJogo(jogo)){
+        jogo.tabuleiro = JogaJogador(teste, jogo.tabuleiro);
+        ImprimeTabuleiro(jogo.tabuleiro);
+
+        if(VenceuJogador(teste, jogo.tabuleiro)==1){
+            printf("JOGADOR %d Venceu!\n", teste.id);
+            flag = 1;
             break;
         }
+
+        if(teste.id == ID_JOGADOR_1){
+            teste = jogo.jogador2;
+        } else {
+            teste = jogo.jogador1;
+        }
+            
     }
         
+    if(flag == 0){
+        if(VenceuJogador(jogo.jogador1, jogo.tabuleiro)==1){
+            printf("JOGADOR 1 Venceu!\n");
+        } else if(VenceuJogador(jogo.jogador2, jogo.tabuleiro)==1){
+            printf("JOGADOR 2 Venceu!\n");
+        } else {
+            printf("Sem vencedor!\n");
+        }
+    }
+
+        printf("Jogar novamente? (s,n)\n"); 
+
 }
 
 int AcabouJogo(tJogo jogo){
@@ -51,7 +58,13 @@ int AcabouJogo(tJogo jogo){
 }
 
 int ContinuaJogo(){
-    char modo[3];
-    int i = 0;
-    
+    char mode=0;
+    scanf("%*c");
+    scanf("%c", &mode);
+    scanf("%*c");
+    if(mode == 's'){       
+        return 1;
+    } else if(mode == 'n'){
+        return 0;
+    }
 }
