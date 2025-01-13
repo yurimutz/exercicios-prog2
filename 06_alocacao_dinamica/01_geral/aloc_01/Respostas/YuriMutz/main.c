@@ -9,8 +9,6 @@ int main(){
 
     LeVetor(p, tamanho);
 
-    //float media = CalculaMedia(p, tamanho);
-
     printf("%0.2f\n", CalculaMedia(p, tamanho));
 
     LiberaVetor(p);
