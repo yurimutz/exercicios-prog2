@@ -1,0 +1,19 @@
+main.c: In function ‘main’:
+main.c:7:5: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+    7 |     scanf("%d %d", &linhas, &colunas);
+      |     ^~~~~
+main.c:2:1: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+    1 | #include "utils.h"
+  +++ |+#include <stdio.h>
+    2 | 
+main.c:7:5: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+    7 |     scanf("%d %d", &linhas, &colunas);
+      |     ^~~~~
+main.c:7:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+utils.c: In function ‘CriaMatriz’:
+utils.c:10:21: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+   10 |         matriz[i] = (int)malloc(colunas * sizeof(int));
+      |                     ^
+utils.c:10:19: warning: assignment to ‘int *’ from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+   10 |         matriz[i] = (int)malloc(colunas * sizeof(int));
+      |                   ^
