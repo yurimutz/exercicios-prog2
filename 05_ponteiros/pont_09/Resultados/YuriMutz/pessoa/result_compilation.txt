@@ -1,0 +1,27 @@
+pessoa.c: In function ‘LePessoa’:
+pessoa.c:19:19: warning: format ‘%[^
+   ’ expects argument of type ‘char *’, but argument 2 has type ‘char (*)[100]’ [-Wformat=]
+   19 |         scanf("%[^\n]", &pessoa->nome);
+      |                ~~~^~    ~~~~~~~~~~~~~
+      |                   |     |
+      |                   |     char (*)[100]
+      |                   char *
+pessoa.c: In function ‘AssociaFamiliasGruposPessoas’:
+pessoa.c:85:24: warning: format ‘%[a-zA-Z:’ expects argument of type ‘char *’, but argument 2 has type ‘char (*)[100]’ [-Wformat=]
+   85 |         scanf("%[a-zA-Z:]", &lixo);
+      |                ~~~~~~~~^    ~~~~~
+      |                        |    |
+      |                        |    char (*)[100]
+      |                        char *
+pessoa.c:90:24: warning: format ‘%[a-zA-Z:’ expects argument of type ‘char *’, but argument 2 has type ‘char (*)[100]’ [-Wformat=]
+   90 |         scanf("%[a-zA-Z:]", &lixo);
+      |                ~~~~~~~~^    ~~~~~
+      |                        |    |
+      |                        |    char (*)[100]
+      |                        char *
+pessoa.c:95:24: warning: format ‘%[a-zA-Z:’ expects argument of type ‘char *’, but argument 2 has type ‘char (*)[100]’ [-Wformat=]
+   95 |         scanf("%[a-zA-Z:]", &lixo);
+      |                ~~~~~~~~^    ~~~~~
+      |                        |    |
+      |                        |    char (*)[100]
+      |                        char *

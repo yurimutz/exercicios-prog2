@@ -1,0 +1,64 @@
+Lucas Pereira
+Matheus Oliveira
+Joao Silva
+Felipe Oliveira
+Sofia Santos
+Carolina Pereira
+Ana Silva
+Laura Costa
+Rafael Pereira
+Mariana Rodrigues
+Gabriel Rodrigues
+Maria Silva
+Laura Santos
+Pedro Santos
+Sofia Costa
+Isabela Oliveira
+Luiz Rodrigues
+Matheus Costa
+oi 6 oi
+oi2
+0 5 0
+oi2
+0 8 0
+oi2
+15 1 3
+oi2
+11 2 6
+oi2
+4 13 12
+oi2
+7 17 14
+NOME COMPLETO: Lucas Pereira
+PAI: Rafael Pereira
+MAE: Lucas Pereira
+
+
+
+NOME COMPLETO: Felipe Oliveira
+PAI: Matheus Oliveira
+MAE: Isabela Oliveira
+
+
+
+NOME COMPLETO: Ana Silva
+PAI: Joao Silva
+MAE: Maria Silva
+
+
+
+
+
+
+NOME COMPLETO: Laura Santos
+PAI: Pedro Santos
+MAE: Sofia Santos
+
+
+NOME COMPLETO: Sofia Costa
+PAI: Matheus Costa
+MAE: Laura Costa
+
+
+
+
