@@ -1,0 +1,29 @@
+main.c: In function ‘main’:
+main.c:8:5: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+    8 |     scanf("%d", &nAlunos);
+      |     ^~~~~
+main.c:2:1: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+    1 | #include "aluno.h"
+  +++ |+#include <stdio.h>
+    2 | 
+main.c:8:5: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+    8 |     scanf("%d", &nAlunos);
+      |     ^~~~~
+main.c:8:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+main.c:11:34: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+   11 |     tAluno **alunos = (tAluno **)malloc(nAlunos * sizeof(struct Aluno*));
+      |                                  ^~~~~~
+main.c:2:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+    1 | #include "aluno.h"
+  +++ |+#include <stdlib.h>
+    2 | 
+main.c:11:34: warning: incompatible implicit declaration of built-in function ‘malloc’ [-Wbuiltin-declaration-mismatch]
+   11 |     tAluno **alunos = (tAluno **)malloc(nAlunos * sizeof(struct Aluno*));
+      |                                  ^~~~~~
+main.c:11:34: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+main.c:52:5: warning: implicit declaration of function ‘free’ [-Wimplicit-function-declaration]
+   52 |     free(cliente);
+      |     ^~~~
+main.c:52:5: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+main.c:52:5: warning: incompatible implicit declaration of built-in function ‘free’ [-Wbuiltin-declaration-mismatch]
+main.c:52:5: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
