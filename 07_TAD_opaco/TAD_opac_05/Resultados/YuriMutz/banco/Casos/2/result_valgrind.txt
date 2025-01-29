@@ -1,0 +1,23 @@
+==162435== Memcheck, a memory error detector
+==162435== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==162435== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==162435== Command: Resultados/YuriMutz/banco/prog Resultados/YuriMutz/banco/Casos/2
+==162435== Parent PID: 162434
+==162435== 
+==162435== Conditional jump or move depends on uninitialised value(s)
+==162435==    at 0x4849845: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==162435==    by 0x1099A1: DestroiUsuario (in /home/yurimutz/prog2/exercicios-prog2/07_TAD_opaco/TAD_opac_05/Resultados/YuriMutz/banco/prog)
+==162435==    by 0x10965C: DestroiConta (in /home/yurimutz/prog2/exercicios-prog2/07_TAD_opaco/TAD_opac_05/Resultados/YuriMutz/banco/prog)
+==162435==    by 0x1092A7: DestroiBanco (in /home/yurimutz/prog2/exercicios-prog2/07_TAD_opaco/TAD_opac_05/Resultados/YuriMutz/banco/prog)
+==162435==    by 0x109913: main (in /home/yurimutz/prog2/exercicios-prog2/07_TAD_opaco/TAD_opac_05/Resultados/YuriMutz/banco/prog)
+==162435== 
+==162435== 
+==162435== HEAP SUMMARY:
+==162435==     in use at exit: 0 bytes in 0 blocks
+==162435==   total heap usage: 10 allocs, 10 frees, 8,450 bytes allocated
+==162435== 
+==162435== All heap blocks were freed -- no leaks are possible
+==162435== 
+==162435== Use --track-origins=yes to see where uninitialised values come from
+==162435== For lists of detected and suppressed errors, rerun with: -s
+==162435== ERROR SUMMARY: 3 errors from 1 contexts (suppressed: 0 from 0)
