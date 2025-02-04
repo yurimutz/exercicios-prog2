@@ -1,0 +1,17 @@
+main.c: In function ‘main’:
+main.c:29:22: warning: passing argument 1 of ‘LerLivro’ from incompatible pointer type [-Wincompatible-pointer-types]
+   29 |             LerLivro(&livroAux);
+      |                      ^~~~~~~~~
+      |                      |
+      |                      tLivros ** {aka struct Livros **}
+In file included from biblioteca.h:4,
+                 from main.c:1:
+livro.h:22:24: note: expected ‘tLivros *’ {aka ‘struct Livros *’} but argument is of type ‘tLivros **’ {aka ‘struct Livros **’}
+   22 | void LerLivro(tLivros* livro);
+      |               ~~~~~~~~~^~~~~
+main.c:41:13: warning: ‘strAux’ may be used uninitialized [-Wmaybe-uninitialized]
+   41 |             scanf("%[^\n]", strAux);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~
+main.c:40:19: note: ‘strAux’ was declared here
+   40 |             char *strAux;
+      |                   ^~~~~~
