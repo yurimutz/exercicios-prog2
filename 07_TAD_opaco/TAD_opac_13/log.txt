@@ -91,11 +91,11 @@ COMPILANDO OS ARQUIVOS NA PASTA DE RESULTADO DO ALUNO:
 LINKANDO OS ARQUIVOS COMPILADOS:
  - Pasta main:
  - Gerando o binário prog linkando com o(s) arquivo(s) main/*.o
- - Arquivos Linkados: Erro! Binário prog não gerado.
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
  - Arquivo de output gerado: Resultados/YuriMutz/main/result_linking.txt
  - Pasta completo:
  - Gerando o binário prog linkando com o(s) arquivo(s) completo/*.o
- - Arquivos Linkados: Erro! Binário prog não gerado.
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
  - Arquivo de output gerado: Resultados/YuriMutz/completo/result_linking.txt
  - Pasta data:
  - Gerando o binário prog linkando com o(s) arquivo(s) data/*.o
@@ -107,65 +107,76 @@ LINKANDO OS ARQUIVOS COMPILADOS:
  - Arquivo de output gerado: Resultados/YuriMutz/paciente/result_linking.txt
  - Pasta pad:
  - Gerando o binário prog linkando com o(s) arquivo(s) pad/*.o
- - Arquivos Linkados: Erro! Binário prog não gerado.
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
  - Arquivo de output gerado: Resultados/YuriMutz/pad/result_linking.txt
  - Pasta lesao:
  - Gerando o binário prog linkando com o(s) arquivo(s) lesao/*.o
  - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
  - Arquivo de output gerado: Resultados/YuriMutz/lesao/result_linking.txt
- - Arquivos Linkados: Erro! 3 arquivos com erros de linkagem.
 
 EXECUTANDO O VALGRIND EM CADA CASO:
  - Pasta main / Caso 1:
- - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Arquivo de output gerado: Resultados/YuriMutz/main/Casos/1/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 36, frees: 36, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
  - Pasta main / Caso 2:
- - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Arquivo de output gerado: Resultados/YuriMutz/main/Casos/2/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 13, frees: 13, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
  - Pasta main / Caso 3:
- - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Arquivo de output gerado: Resultados/YuriMutz/main/Casos/3/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 18, frees: 18, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
  - Pasta main / Caso 4:
- - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Arquivo de output gerado: Resultados/YuriMutz/main/Casos/4/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 27, frees: 27, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
  - Pasta main / Caso 5:
- - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
- - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Arquivo de output gerado: Resultados/YuriMutz/main/Casos/5/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 4, frees: 4, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta main / Caso 6:
- - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Arquivo de output gerado: Resultados/YuriMutz/main/Casos/6/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 17, frees: 17, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
- - Nota para a pasta main (máximo 1.66) - 0 de 60 - 0% de 1.66: 0.
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
+ - Nota para a pasta main (máximo 1.66) - 10.00 de 60 - 16.00% de 1.66: .26.
  -----
  - Pasta completo / Caso 1:
- - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Arquivo de output gerado: Resultados/YuriMutz/completo/Casos/1/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
  - Pasta completo / Caso 2:
- - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Arquivo de output gerado: Resultados/YuriMutz/completo/Casos/2/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
  - Pasta completo / Caso 3:
- - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Arquivo de output gerado: Resultados/YuriMutz/completo/Casos/3/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
  - Pasta completo / Caso 4:
- - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Arquivo de output gerado: Resultados/YuriMutz/completo/Casos/4/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
  - Pasta completo / Caso 5:
- - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Arquivo de output gerado: Resultados/YuriMutz/completo/Casos/5/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
  - Pasta completo / Caso 6:
- - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Arquivo de output gerado: Resultados/YuriMutz/completo/Casos/6/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
  - Nota para a pasta completo (máximo 1.66) - 0 de 60 - 0% de 1.66: 0.
  -----
  - Pasta data / Caso 1:
@@ -233,29 +244,35 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Nota para a pasta paciente (máximo 1.67) - 10.00 de 60 - 16.00% de 1.67: .26.
  -----
  - Pasta pad / Caso 1:
- - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Arquivo de output gerado: Resultados/YuriMutz/pad/Casos/1/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
  - Pasta pad / Caso 2:
- - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Arquivo de output gerado: Resultados/YuriMutz/pad/Casos/2/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
  - Pasta pad / Caso 3:
- - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Arquivo de output gerado: Resultados/YuriMutz/pad/Casos/3/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
  - Pasta pad / Caso 4:
- - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Arquivo de output gerado: Resultados/YuriMutz/pad/Casos/4/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
  - Pasta pad / Caso 5:
- - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Arquivo de output gerado: Resultados/YuriMutz/pad/Casos/5/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
  - Pasta pad / Caso 6:
- - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Arquivo de output gerado: Resultados/YuriMutz/pad/Casos/6/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
  - Nota para a pasta pad (máximo 1.67) - 0 de 60 - 0% de 1.67: 0.
  -----
  - Pasta lesao / Caso 1:
@@ -299,14 +316,14 @@ RESULTADOS FINAIS
 Aluno: YuriMutz
  - Arquivos Esperados Corretos: 9 de 9
  - Pastas Compiladas Corretamente: 6 de 6 
- - Pastas Linkadas Corretamente: 3 de 6
+ - Pastas Linkadas Corretamente: 6 de 6
  - Teste main
- - Resultados corretos: 0 de 6
- - Valgrinds corretos: 0 de 6
- - Nota de YuriMutz para o teste main: 0
+ - Resultados corretos: 1 de 6
+ - Valgrinds corretos: 6 de 6
+ - Nota de YuriMutz para o teste main: .26
  - Teste completo
  - Resultados corretos: 0 de 6
- - Valgrinds corretos: 0 de 6
+ - Valgrinds corretos: 6 de 6
  - Nota de YuriMutz para o teste completo: 0
  - Teste data
  - Resultados corretos: 1 de 6
@@ -318,14 +335,14 @@ Aluno: YuriMutz
  - Nota de YuriMutz para o teste paciente: .26
  - Teste pad
  - Resultados corretos: 0 de 6
- - Valgrinds corretos: 0 de 6
+ - Valgrinds corretos: 6 de 6
  - Nota de YuriMutz para o teste pad: 0
  - Teste lesao
  - Resultados corretos: 1 de 6
  - Valgrinds corretos: 6 de 6
  - Nota de YuriMutz para o teste lesao: .26
- - Nota de YuriMutz: 0+(.26)+(.26)+(0)+(0)+(0)+(.26)
- - Nota de YuriMutz: .78
+ - Nota de YuriMutz: 0+(.26)+(.26)+(0)+(.26)+(0)+(.26)
+ - Nota de YuriMutz: 1.04
 
 ----------------------------------------------------------------------------
 

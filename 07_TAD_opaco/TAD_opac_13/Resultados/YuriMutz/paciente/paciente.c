@@ -44,8 +44,6 @@ int GetQtdCirurgiasPaciente(tPaciente* p){
 
     }
 
-
-
     return aux;
 
 }

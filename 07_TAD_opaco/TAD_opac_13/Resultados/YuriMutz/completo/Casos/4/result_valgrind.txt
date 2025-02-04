@@ -1,0 +1,37 @@
+==104703== Memcheck, a memory error detector
+==104703== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==104703== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==104703== Command: Resultados/YuriMutz/completo/prog Resultados/YuriMutz/completo/Casos/4
+==104703== Parent PID: 104702
+==104703== 
+==104703== Invalid write of size 8
+==104703==    at 0x109A0B: RodaPad (in /home/yurimutz/prog2/exercicios-prog2/07_TAD_opaco/TAD_opac_13/Resultados/YuriMutz/completo/prog)
+==104703==    by 0x109526: main (in /home/yurimutz/prog2/exercicios-prog2/07_TAD_opaco/TAD_opac_13/Resultados/YuriMutz/completo/prog)
+==104703==  Address 0x4a743c0 is 0 bytes after a block of size 800 alloc'd
+==104703==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==104703==    by 0x109912: CriaPad (in /home/yurimutz/prog2/exercicios-prog2/07_TAD_opaco/TAD_opac_13/Resultados/YuriMutz/completo/prog)
+==104703==    by 0x109516: main (in /home/yurimutz/prog2/exercicios-prog2/07_TAD_opaco/TAD_opac_13/Resultados/YuriMutz/completo/prog)
+==104703== 
+==104703== Invalid read of size 8
+==104703==    at 0x109A2B: RodaPad (in /home/yurimutz/prog2/exercicios-prog2/07_TAD_opaco/TAD_opac_13/Resultados/YuriMutz/completo/prog)
+==104703==    by 0x109526: main (in /home/yurimutz/prog2/exercicios-prog2/07_TAD_opaco/TAD_opac_13/Resultados/YuriMutz/completo/prog)
+==104703==  Address 0x4a743c0 is 0 bytes after a block of size 800 alloc'd
+==104703==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==104703==    by 0x109912: CriaPad (in /home/yurimutz/prog2/exercicios-prog2/07_TAD_opaco/TAD_opac_13/Resultados/YuriMutz/completo/prog)
+==104703==    by 0x109516: main (in /home/yurimutz/prog2/exercicios-prog2/07_TAD_opaco/TAD_opac_13/Resultados/YuriMutz/completo/prog)
+==104703== 
+==104703== Use of uninitialised value of size 8
+==104703==    at 0x1096C1: LePaciente (in /home/yurimutz/prog2/exercicios-prog2/07_TAD_opaco/TAD_opac_13/Resultados/YuriMutz/completo/prog)
+==104703==    by 0x109A35: RodaPad (in /home/yurimutz/prog2/exercicios-prog2/07_TAD_opaco/TAD_opac_13/Resultados/YuriMutz/completo/prog)
+==104703==    by 0x109526: main (in /home/yurimutz/prog2/exercicios-prog2/07_TAD_opaco/TAD_opac_13/Resultados/YuriMutz/completo/prog)
+==104703== 
+==104703== Use of uninitialised value of size 8
+==104703==    at 0x1096FD: LePaciente (in /home/yurimutz/prog2/exercicios-prog2/07_TAD_opaco/TAD_opac_13/Resultados/YuriMutz/completo/prog)
+==104703==    by 0x109A35: RodaPad (in /home/yurimutz/prog2/exercicios-prog2/07_TAD_opaco/TAD_opac_13/Resultados/YuriMutz/completo/prog)
+==104703==    by 0x109526: main (in /home/yurimutz/prog2/exercicios-prog2/07_TAD_opaco/TAD_opac_13/Resultados/YuriMutz/completo/prog)
+==104703== 
+==104703== Use of uninitialised value of size 8
+==104703==    at 0x109705: LePaciente (in /home/yurimutz/prog2/exercicios-prog2/07_TAD_opaco/TAD_opac_13/Resultados/YuriMutz/completo/prog)
+==104703==    by 0x109A35: RodaPad (in /home/yurimutz/prog2/exercicios-prog2/07_TAD_opaco/TAD_opac_13/Resultados/YuriMutz/completo/prog)
+==104703==    by 0x109526: main (in /home/yurimutz/prog2/exercicios-prog2/07_TAD_opaco/TAD_opac_13/Resultados/YuriMutz/completo/prog)
+==104703== 

@@ -1,0 +1,16 @@
+==105027== Memcheck, a memory error detector
+==105027== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==105027== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==105027== Command: Resultados/YuriMutz/completo/prog Resultados/YuriMutz/completo/Casos/6
+==105027== Parent PID: 105026
+==105027== 
+==105027== Conditional jump or move depends on uninitialised value(s)
+==105027==    at 0x485036C: strcmp (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==105027==    by 0x109AEC: RodaPad (in /home/yurimutz/prog2/exercicios-prog2/07_TAD_opaco/TAD_opac_13/Resultados/YuriMutz/completo/prog)
+==105027==    by 0x109526: main (in /home/yurimutz/prog2/exercicios-prog2/07_TAD_opaco/TAD_opac_13/Resultados/YuriMutz/completo/prog)
+==105027== 
+==105027== Conditional jump or move depends on uninitialised value(s)
+==105027==    at 0x4850394: strcmp (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==105027==    by 0x109AEC: RodaPad (in /home/yurimutz/prog2/exercicios-prog2/07_TAD_opaco/TAD_opac_13/Resultados/YuriMutz/completo/prog)
+==105027==    by 0x109526: main (in /home/yurimutz/prog2/exercicios-prog2/07_TAD_opaco/TAD_opac_13/Resultados/YuriMutz/completo/prog)
+==105027== 

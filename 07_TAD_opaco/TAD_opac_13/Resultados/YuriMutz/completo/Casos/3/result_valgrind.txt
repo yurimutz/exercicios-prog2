@@ -1,0 +1,6 @@
+==104606== Memcheck, a memory error detector
+==104606== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==104606== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==104606== Command: Resultados/YuriMutz/completo/prog Resultados/YuriMutz/completo/Casos/3
+==104606== Parent PID: 104605
+==104606== 
