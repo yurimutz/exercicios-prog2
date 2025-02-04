@@ -29,14 +29,14 @@ tLivros* CriaLivro(){
 
 void LerLivro(tLivros* livro){
 
-    //scanf("%*[\n]");
     scanf("%[^\n]", livro->titulo);
     scanf("%*[\n]");
 
     scanf("%[^\n]", livro->autor);
     scanf("%*[\n]");
 
-    scanf("%d ", &livro->anoPubli);
+    scanf("%d", &livro->anoPubli);
+    scanf("%*c");
 
 }
 

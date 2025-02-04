@@ -23,21 +23,19 @@ int main(){
         switch (mode){
 
         case 1:
-            
+
             tLivros *livroAux = CriaLivro();
 
             LerLivro(livroAux);
 
             AdicionarLivroNaBiblioteca(biblioteca, livroAux);
 
-            ApagaLivro(livroAux);
-
             break;
             
 
         case 2:
             
-            char *strAux;
+            char strAux[100]; 
             scanf("%[^\n]", strAux);
             scanf("%*[\n]");
 
@@ -53,7 +51,11 @@ int main(){
         
         default:
 
-            printf("Invalido\n");
+            printf("Operacao invalida!\n");
+
+            ApagaBiblioteca(biblioteca);
+
+            return 0;
 
             break;
 

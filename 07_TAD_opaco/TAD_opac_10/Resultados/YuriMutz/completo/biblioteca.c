@@ -18,7 +18,6 @@ tBiblioteca* InicializarBiblioteca(){
 
     for(int i = 0; i < NUM_INICIAL_LIVROS; i++){
   
-        //biblioteca->livro[i] = CriaLivro();
         biblioteca->livro[i] = NULL;
 
     }
@@ -33,7 +32,11 @@ void ApagaBiblioteca(tBiblioteca* biblioteca){
 
     for(int i = 0; i < biblioteca->tamanho; i++){
 
-        ApagaLivro(biblioteca->livro[i]);
+        if(biblioteca->livro[i] != NULL){ 
+
+            ApagaLivro(biblioteca->livro[i]);
+
+        }
 
     }
 
@@ -74,17 +77,22 @@ void RemoverLivroDaBiblioteca(tBiblioteca* biblioteca, char *titulo){
 
     for(int i = 0; i < biblioteca->tamanho; i++){
 
-        if(VerificaTituloDoLivroNaBiblioteca(biblioteca->livro[i], titulo) == 0){
 
-            ApagaLivro(biblioteca->livro[i]);
+        if(biblioteca->livro[i] != NULL){
 
-            biblioteca->livro[i] = CriaLivro();
+            if(VerificaTituloDoLivroNaBiblioteca(biblioteca->livro[i], titulo) == 0){
 
-            printf("Livro removido com sucesso!\n");   
+                ApagaLivro(biblioteca->livro[i]);
 
-            flag = 1;
+                biblioteca->livro[i] = NULL;
 
-            break;
+                printf("Livro removido com sucesso!\n");   
+
+                flag = 1;
+
+                break;
+
+            }
 
         }
 
@@ -117,19 +125,19 @@ int VerificaTituloDoLivroNaBiblioteca(tLivros* livro, char* titulo){
 
 void ListarLivrosDaBiblioteca(tBiblioteca* biblioteca){
 
-    int aux = 0;
+    int flag = 0;
 
     for(int i = 0; i < biblioteca->tamanho; i++){
 
-        if( getTitulo(biblioteca->livro[i] ) == NULL){ 
+        if(biblioteca->livro[i] != NULL){
 
-            aux++;
+            flag++;
 
         }
 
     }
 
-    if(aux == biblioteca->tamanho){
+    if(flag == 0){
 
         printf("A biblioteca esta vazia!\n");
 
@@ -140,7 +148,7 @@ void ListarLivrosDaBiblioteca(tBiblioteca* biblioteca){
 
         for(int i = 0; i < biblioteca->tamanho; i++){
 
-            if( getTitulo(biblioteca->livro[i]) != NULL){   
+            if(biblioteca->livro[i] != NULL){
 
                 ImprimeLivro(biblioteca->livro[i]);
 
