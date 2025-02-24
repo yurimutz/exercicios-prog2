@@ -1,13 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "vector.h"
+#include "aluno.h"
 
 // typedef void *data_type; // void pointer
 // typedef struct Vector Vector;
 
 struct Vector{
 
-    void **vet;
+    data_type *vet;
     int tam;
     int tamAtual;
 
@@ -17,7 +18,9 @@ Vector *VectorConstruct(){
 
     Vector *vet = malloc(sizeof(Vector));
 
-    vet->tam = 0;
+    vet->tam = 10;
+
+    vet->vet = malloc(sizeof(data_type) * vet->tam);
 
     vet->tamAtual = 0;
 
@@ -27,19 +30,15 @@ Vector *VectorConstruct(){
 
 void VectorPushBack(Vector *v, data_type val){
 
-    if(v->tamAtual == 0){
+    if(v->tamAtual == v->tam){
 
-        v->vet = malloc(sizeof(void *));
+        v->tam = v->tam * 2;
 
-    } else {
-
-        v->vet = realloc(v->vet, sizeof(void *) * (v->tamAtual + 1));
+        v->vet = realloc(v->vet, (v->tam) * sizeof(data_type));
 
     }
 
-    data_type *vet = (data_type*)v->vet;
-
-    vet[v->tamAtual] = val;
+    ((data_type*)v->vet)[v->tamAtual] = val;
 
     v->tamAtual++;
 
@@ -47,28 +46,23 @@ void VectorPushBack(Vector *v, data_type val){
 
 data_type VectorGet(Vector *v, int i){
 
-    data_type *vet = (data_type*)v->vet;
-
-    return vet[i];
-
+    return v->vet[i];
     
 }
 
 int VectorSize(Vector *v){
 
-    return v->tam;
+    return v->tamAtual;
 
 }
 
 void VectorDestroy(Vector *v, void (*destroy)(data_type)){
 
-    data_type *vet = (data_type*)v->vet;
-
     for(int i = 0; i < v->tamAtual; i++){
 
-        if(vet[i] != NULL){
+        if(v->vet[i] != NULL){
 
-            destroy(vet[i]);
+            destroy((tAluno*)v->vet[i]);
 
         }
 
