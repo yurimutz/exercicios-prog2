@@ -151,6 +151,10 @@ void ExecutarTarefasDaAgenda(tAgendaTarefas* tar){
 
             if(tar->prioridade[i] < tar->prioridade[j]){
 
+                aux = tar->prioridade[i];
+                tar->prioridade[i] = tar->prioridade[j];
+                tar->prioridade[j] = aux;
+
                 tarefaAux = tar->tarefa[i];
                 tar->tarefa[i] = tar->tarefa[j];
                 tar->tarefa[j] = tarefaAux;
