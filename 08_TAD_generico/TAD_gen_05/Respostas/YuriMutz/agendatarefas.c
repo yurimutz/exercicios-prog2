@@ -19,8 +19,6 @@ struct agendatarefas{
     int numTarefas;
     int qtdAtual;
     int *prioridade;
-    int *indices;
-    int numIndice;
 
     // void(**ptrfDestroi)(void*);
     destroi *funcDestroy;
@@ -51,10 +49,6 @@ tAgendaTarefas* CriaAgendaDeTarefas(int numElem){
 
     agenda->funcExec = malloc(numElem * sizeof(void (*)(void*)));
 
-    agenda->indices = malloc(numElem * sizeof(int));
-
-    agenda->numIndice = 0;
-
     return agenda;
 
 }
@@ -66,6 +60,22 @@ tAgendaTarefas* CriaAgendaDeTarefas(int numElem){
  */
 void DestroiAgendaDeTarefas(tAgendaTarefas* tar){
 
+    for(int i = 0; i < tar->qtdAtual; i++){   
+
+        tar->funcDestroy[i](tar->tarefa[i]);
+
+    }
+
+    free(tar->prioridade);
+
+    free(tar->funcDestroy);
+
+    free(tar->funcExec);
+
+    free(tar->tarefa);
+
+
+    free(tar);
 
 
 }
@@ -96,8 +106,6 @@ void CadastraTarefaNaAgenda(tAgendaTarefas* tar, int prioridade, void *tarefa, v
 
         //printf("oi\n");
 
-        
-
     } else if(executa == ExecutaTarefaMultiplicar){
 
         ((tMult**)tar->tarefa)[tar->qtdAtual] = (tMult*)tarefa;
@@ -125,8 +133,6 @@ void CadastraTarefaNaAgenda(tAgendaTarefas* tar, int prioridade, void *tarefa, v
 
     }
 
-
-
 }   
 
 /**
@@ -137,37 +143,31 @@ void CadastraTarefaNaAgenda(tAgendaTarefas* tar, int prioridade, void *tarefa, v
  */
 void ExecutarTarefasDaAgenda(tAgendaTarefas* tar){
 
-    int aux;
-    int flag = 0;
-    int indAux = 0;
+    for(int i = 0; i < (tar->qtdAtual); i++){
 
-    void *tarefaAux;
-    void(*destAux)(void*);
-    void(*execAux)(void*);
+        for(int j = 0; j < tar->qtdAtual-1; j++){
 
-    for(int i = 0; i < tar->qtdAtual-1; i++){
+            if(tar->prioridade[j] < tar->prioridade[j+1]){
 
-        for(int j = i+1; j < tar->qtdAtual; j++){
+                int aux;
+                aux = tar->prioridade[j];
+                tar->prioridade[j] = tar->prioridade[j+1];
+                tar->prioridade[j+1] = aux;
 
-            if(tar->prioridade[i] < tar->prioridade[j]){
+                void *tarefaAux;
+                tarefaAux = tar->tarefa[j];
+                tar->tarefa[j] = tar->tarefa[j+1];
+                tar->tarefa[j+1] = tarefaAux;
 
-                aux = tar->prioridade[i];
-                tar->prioridade[i] = tar->prioridade[j];
-                tar->prioridade[j] = aux;
+                void(*destAux)(void*);
+                destAux = tar->funcDestroy[j];
+                tar->funcDestroy[j] = tar->funcDestroy[j+1];
+                tar->funcDestroy[j+1] = destAux;
 
-                tarefaAux = tar->tarefa[i];
-                tar->tarefa[i] = tar->tarefa[j];
-                tar->tarefa[j] = tarefaAux;
-
-                destAux = tar->funcDestroy[i];
-                tar->funcDestroy[i] = tar->funcDestroy[j];
-                tar->funcDestroy[j] = destAux;
-
-                execAux = tar->funcExec[i];
-                tar->funcExec[i] = tar->funcExec[j];
-                tar->funcExec[j] = execAux;
-
-
+                void(*execAux)(void*);
+                execAux = tar->funcExec[j];
+                tar->funcExec[j] = tar->funcExec[j+1];
+                tar->funcExec[j+1] = execAux;
 
             } 
 
@@ -178,10 +178,7 @@ void ExecutarTarefasDaAgenda(tAgendaTarefas* tar){
 
     for(int i = 0; i < tar->qtdAtual; i++){
 
-        auxD = tar->funcExec[i];
-
-        auxD(tar->tarefa[i]);
-
+        tar->funcExec[i](tar->tarefa[i]);
 
     }
 
