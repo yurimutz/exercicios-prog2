@@ -1,0 +1,4 @@
+histograma.c: In function ‘CalcularHistograma’:
+histograma.c:31:29: warning: assignment to ‘int’ from ‘void *’ makes integer from pointer without a cast [-Wint-conversion]
+   31 |         h->pixelPorInter[i] = NULL;
+      |                             ^
