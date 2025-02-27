@@ -1,15 +1,15 @@
-==26071== Memcheck, a memory error detector
-==26071== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
-==26071== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
-==26071== Command: Resultados/YuriMutz/tarefaimprime/prog Resultados/YuriMutz/tarefaimprime/Casos/1
-==26071== Parent PID: 26070
-==26071== 
-==26071== 
-==26071== HEAP SUMMARY:
-==26071==     in use at exit: 0 bytes in 0 blocks
-==26071==   total heap usage: 12 allocs, 12 frees, 8,538 bytes allocated
-==26071== 
-==26071== All heap blocks were freed -- no leaks are possible
-==26071== 
-==26071== For lists of detected and suppressed errors, rerun with: -s
-==26071== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==74302== Memcheck, a memory error detector
+==74302== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==74302== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==74302== Command: Resultados/YuriMutz/tarefaimprime/prog Resultados/YuriMutz/tarefaimprime/Casos/1
+==74302== Parent PID: 74301
+==74302== 
+==74302== 
+==74302== HEAP SUMMARY:
+==74302==     in use at exit: 0 bytes in 0 blocks
+==74302==   total heap usage: 12 allocs, 12 frees, 8,538 bytes allocated
+==74302== 
+==74302== All heap blocks were freed -- no leaks are possible
+==74302== 
+==74302== For lists of detected and suppressed errors, rerun with: -s
+==74302== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
