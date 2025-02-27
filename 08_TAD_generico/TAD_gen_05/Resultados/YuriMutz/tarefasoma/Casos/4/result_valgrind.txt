@@ -1,15 +1,15 @@
-==62963== Memcheck, a memory error detector
-==62963== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
-==62963== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
-==62963== Command: Resultados/YuriMutz/tarefasoma/prog Resultados/YuriMutz/tarefasoma/Casos/4
-==62963== Parent PID: 62962
-==62963== 
-==62963== 
-==62963== HEAP SUMMARY:
-==62963==     in use at exit: 0 bytes in 0 blocks
-==62963==   total heap usage: 35 allocs, 35 frees, 9,233 bytes allocated
-==62963== 
-==62963== All heap blocks were freed -- no leaks are possible
-==62963== 
-==62963== For lists of detected and suppressed errors, rerun with: -s
-==62963== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==25843== Memcheck, a memory error detector
+==25843== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==25843== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==25843== Command: Resultados/YuriMutz/tarefasoma/prog Resultados/YuriMutz/tarefasoma/Casos/4
+==25843== Parent PID: 25842
+==25843== 
+==25843== 
+==25843== HEAP SUMMARY:
+==25843==     in use at exit: 0 bytes in 0 blocks
+==25843==   total heap usage: 35 allocs, 35 frees, 9,233 bytes allocated
+==25843== 
+==25843== All heap blocks were freed -- no leaks are possible
+==25843== 
+==25843== For lists of detected and suppressed errors, rerun with: -s
+==25843== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
