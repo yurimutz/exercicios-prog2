@@ -1,0 +1,4 @@
+estabelecimento.c: In function ‘DestroiEstabelecimento’:
+estabelecimento.c:38:13: warning: assignment to ‘void (*)(void *)’ from incompatible pointer type ‘void (*)(tProduto *)’ {aka ‘void (*)(struct Produto *)’} [-Wincompatible-pointer-types]
+   38 |     destroy = DestroiProduto;
+      |             ^
