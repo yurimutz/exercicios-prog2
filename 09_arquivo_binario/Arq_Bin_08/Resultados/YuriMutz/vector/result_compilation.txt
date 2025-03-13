@@ -1,0 +1,4 @@
+vector.c: In function ‘VectorRemove’:
+vector.c:69:13: warning: unused variable ‘j’ [-Wunused-variable]
+   69 |     for(int j = i; i < v->tamAtual-1; i++){
+      |             ^
